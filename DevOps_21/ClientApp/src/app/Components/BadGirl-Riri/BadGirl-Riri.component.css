@@ -1,0 +1,18 @@
+/* my positioning css */
+
+/* main icon */
+._profile {
+	height: 10em; /* height == width */
+	width: 10em;
+	border: 2px solid #666;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/*  */
