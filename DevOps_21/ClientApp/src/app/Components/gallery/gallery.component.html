@@ -1,28 +1,83 @@
+<div class="mainGallary">
 
-<div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="../../../assets/Assets/andromeda.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Andromeda</div>
-</div>
+  <div class="gallery-container">
 
-<div class="gallery">
-  <a target="_blank" href="img_forest.jpg">
-    <img src="../../../assets/Assets/niceLights.jpg" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">Nice Lights</div>
-</div>
+    <div class="gallery">
 
-<div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="../../../assets/Assets/spaceWhole.jpg" alt="Northern Lights" width="600" height="400">
-  </a>
-  <div class="desc">Space Whole</div>
-</div>
+        <img (mouseenter)="change('Andromeda Galaxy')" (mouseleave)="change('Welcome')"  src="../../../assets/Assets/andromeda.jpg" alt="Cinque Terre" width="600" height="400">
 
-<div class="gallery">
-  <a target="_blank" href="img_mountains.jpg">
-    <img src="../../../assets/Assets//nebula.jpg" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">boom sound</div>
-</div>
+
+      <div class="desc">Andromeda Galaxy</div>
+
+    </div>
+
+    <div class="gallery">
+        <img (mouseenter)="change('Aurora Borealis')" (mouseleave)="change('Welcome')"  src="../../../assets/Assets/niceLights.jpg" alt="Forest" width="600" height="400">
+      <div class="desc">Aurora Borealis</div>
+    </div>
+
+    <div class="gallery">
+        <img (mouseenter)="change('Nebula')" (mouseleave)="change('Welcome')"  src="../../../assets/Assets/spaceWhole.jpg" alt="Northern Lights" width="600" height="400">
+      <div class="desc">Nebula</div>
+    </div>
+
+    <div class="gallery">
+        <img (mouseenter)="change('Supernova')" (mouseleave)="change('Welcome')" src="../../../assets/Assets//nebula.jpg" alt="Mountains" width="600" height="400">
+      <div class="desc">Supernova</div>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class="assistant">
+
+     <div class="box sb" *ngIf="state=='Welcome'">
+       <h3>Hello there! I'm bad Girl Ri-Ri</h3>
+      <h4>AKA Ms<b>.</b> Billie</h4>
+      <h4>AKA Ms<b>.</b> Baddest Bxch in the universe</h4>
+      <h4 class="text">To prove this, just Hover over a Picture and I'll tell you all about It !</h4>
+      </div>
+
+      <div class="box sb" *ngIf="state=='Andromeda Galaxy'">
+        <h3>Bad Girl RiRi Says :</h3>
+        <div class="text">
+          <h3>Andromeda Galaxy</h3>
+          <h5>If Home Away from was Ever a place Andromeda Is Most Definatly Where you Wana Be, As our main neightboring Galaxy its Most Defininatly got Some great Planets that are so remincint of home I could almost move there... but until they fix their corglaxian Problem,  Ill settle for Bi annual Visits For now.</h5>
+        </div>
+        </div>
+
+      <div class="box sb" *ngIf="state=='Aurora Borealis'">
+        <h3>Bad Girl RiRi Says :</h3>
+       <div class="text">
+         <h3>Aurora Borealis</h3>
+         <p>ahh the Aurora Borealis, I have this nice little cottage in Tromso (that's in Norway btw) and at the peak of midnight You get the most beautiful view of these amazing lights</p>
+       </div>
+       </div>
+
+       <div class="box sb" *ngIf="state=='Nebula'">
+        <h3>Bad Girl RiRi Says :</h3>
+        <div class="text">
+          <h3>Aurora Borealis</h3>
+          <h5>
+             Ahh Nebula's, When Warping From Earth To Andromeda, Its Almost too Easy To miss Them Since Time Dialation Is Such a Bxtch but if you set your FTL Enginees to cool-down Every Five Quartets you'll catch more then you mmiss, and trust when i say, <br><b>They are Definiatly Worth It</b> </h5>
+        </div>
+        </div>
+
+       <div class="box sb" *ngIf="state=='Supernova'">
+        <h3>Bad Girl RiRi Says :</h3>
+        <div class="text">
+          <h3>Aurora Borealis</h3>
+          <h5>Ironically, 62 Life Cycles ago I had a little Flig with the man of Steel himself and one of the place he loved to take me was this little Dwarf  Universe almost to the center of Creation.. and there you could see Star Die and get Reborn thousands of times over... <br> The If I wasnt a Alive I truly would say it was the most beautiful thing in all of creation </h5>
+        </div>
+        </div>
+
+  <div class='_profile'>
+    <div class="img">
+      <img src="../../../assets/Assets/Riri.png" alt="">
+    </div>
+    </div>
+
+  </div>
+
+  </div>

@@ -33,7 +33,7 @@ import { UniverseExplorationComponent } from './Universe-Exploration/Universe-Ex
     FormsModule,
     ApiAuthorizationModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: UniverseExplorationComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'uni', component: UniverseExplorationComponent},
       { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },

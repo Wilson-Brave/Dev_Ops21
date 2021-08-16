@@ -5,11 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-export class GalleryComponent implements OnInit {
 
-  constructor() { }
+export class GalleryComponent implements OnInit {
+  
+  state:string;
+
+  constructor() {
+    this.state = 'Welcome';
+   }
 
   ngOnInit() {
   }
+
+
+  change(key:string) {
+    this.state = key;
+  }
+
 
 }
